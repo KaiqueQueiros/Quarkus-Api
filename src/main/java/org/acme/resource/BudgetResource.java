@@ -1,4 +1,4 @@
-package org.example.resource;
+package org.acme.resource;
 
 import jakarta.annotation.security.RolesAllowed;
 import jakarta.inject.Inject;
@@ -6,10 +6,10 @@ import jakarta.transaction.Transactional;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
+import org.acme.dto.BudgetDTO;
+import org.acme.dto.BudgetUpdateDTO;
+import org.acme.service.BudgetService;
 import org.eclipse.microprofile.openapi.annotations.parameters.RequestBody;
-import org.example.dto.BudgetDTO;
-import org.example.dto.BudgetUpdateDTO;
-import org.example.service.BudgetService;
 
 @Path("/api/budget")
 public class BudgetResource {

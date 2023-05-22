@@ -1,4 +1,4 @@
-package org.example.config;
+package org.acme.config;
 
 import jakarta.ws.rs.core.Application;
 import org.eclipse.microprofile.openapi.annotations.OpenAPIDefinition;

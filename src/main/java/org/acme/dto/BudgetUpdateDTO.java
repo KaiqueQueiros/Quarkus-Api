@@ -1,4 +1,4 @@
-package org.example.dto;
+package org.acme.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.validation.constraints.Email;

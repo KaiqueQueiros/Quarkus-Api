@@ -1,4 +1,4 @@
-package org.example.service;
+package org.acme.service;
 
 import io.quarkus.hibernate.orm.panache.PanacheEntityBase;
 import jakarta.enterprise.context.ApplicationScoped;
@@ -6,14 +6,13 @@ import jakarta.inject.Inject;
 import jakarta.ws.rs.NotFoundException;
 import jakarta.ws.rs.PathParam;
 import jakarta.ws.rs.core.Response;
+import org.acme.client.ProductClient;
+import org.acme.dto.BudgetDTO;
+import org.acme.dto.BudgetUpdateDTO;
+import org.acme.dto.ProductDTO;
+import org.acme.entity.BudgetEntity;
 import org.eclipse.microprofile.openapi.annotations.parameters.RequestBody;
 import org.eclipse.microprofile.rest.client.inject.RestClient;
-import org.example.client.ProductClient;
-import org.example.dto.BudgetDTO;
-import org.example.dto.BudgetUpdateDTO;
-import org.example.dto.ProductDTO;
-import org.example.entity.BudgetEntity;
-
 import java.util.List;
 
 @ApplicationScoped

@@ -1,11 +1,11 @@
-package org.example.client;
+package org.acme.client;
 
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.PathParam;
+import org.acme.dto.ProductDTO;
 import org.eclipse.microprofile.rest.client.inject.RegisterRestClient;
-import org.example.dto.ProductDTO;
 
 @Path("/product")
 @RegisterRestClient

@@ -1,11 +1,11 @@
-package org.example.entity;
+package org.acme.entity;
 
 import io.quarkus.hibernate.orm.panache.PanacheEntity;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.example.dto.BudgetDTO;
-import org.example.dto.BudgetUpdateDTO;
+import org.acme.dto.BudgetDTO;
+import org.acme.dto.BudgetUpdateDTO;
 
 @Entity
 @Data
@@ -28,6 +28,7 @@ public class BudgetEntity extends PanacheEntity {
         this.phone = dto.getPhone();
         this.productId = dto.getProductId();
     }
+
     public void update(BudgetUpdateDTO dto) {
         if (dto.name() != null) {
             this.name = dto.name();

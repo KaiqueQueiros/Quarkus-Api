@@ -1,11 +1,11 @@
- package org.example.dto;
+package org.acme.dto;
 
 import jakarta.validation.constraints.NotEmpty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.extern.jackson.Jacksonized;
-import org.example.entity.BudgetEntity;
+import org.acme.entity.BudgetEntity;
 
 @AllArgsConstructor
 @Data
